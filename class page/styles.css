@@ -2,21 +2,29 @@ html, body {
     background-color:#f6eeee;
     margin:0;
     padding:0;
-    color: #3D061C;
+    color:#1C9393;
+    display: block;
+    font-size:10;
     font-family:"Trebuchet MS", Helvetica, sans-serif;
 
+}
+.posts p{
+    font-family:"Trebuchet MS", Helvetica, sans-serif;
+    font-size:14;
+    color: #3D061C;
 }
 .sidebar {
     background-color:#3D061C;
     font-size:11;
     float:left;
-    min-width:120;
-    max-width:160;
-    width:15%;
+    min-width:10%;
+    max-width:15%;
     height:100%;
     padding:10px;
     position: fixed;
-    color:#1C9393;
+    color:#0e7171;
+    z-index: 1;
+    overflow: hidden;
   
 }
 
@@ -25,20 +33,23 @@ a{
     text-decoration:none;
 }
 .posts {
-    
-    float:right;
+    position: absolute;
+    display:block;
+    top: 65px;
+    right: 20;
     width:75%;
 }
 ul{
     list-style: none;
-    list-style-type:none;
+    list-style-type: none;
     text-align: left;
-    margin-left: 5%;
-    padding-left: 0;
+    margin-left: 0;
+    padding: 0;
 }
+
 li a{
     display: block;
-    padding: 0 0 4px 16px;
+    padding: 0;
     margin-left: 0;
     margin-top: 0;
     
@@ -46,10 +57,11 @@ li a{
 li a:hover {
     background-color: #210410;
     color:#66FF6A;
+    font-size: 14;
 }
 code{
     font-family:"Courier New", Courier, monospace;
-    color: #8C576D;
+    color: #b54b4b;
 }
 .highlight{
     padding-top: 5px;
@@ -71,11 +83,39 @@ code{
     font-weight: 100;
 }
 .sidebar h1 a:hover{
-    color: #66FF6A;;
+    color: #66FF6A;
 }
 .content h1{
     color:#1C9393;
+    position:fixed;
+    top: -50;
+    display:block;
+    background-color:#f6eeee;
+    width: 1000;
+    padding-top: 50;
+    padding-bottom: 10;
+    font-size: 30;
 }
 .content h2{
     font-size: 20;
+    color: #3D061C;
+}
+
+small{
+    font-size:9px;
+}
+.na, .nt{
+    color: #a350c5;
+}
+.k{
+    color: #c49e39;
+}
+.nf, .nc{
+    color: #3481e1;
+}
+.m{
+    color: #d67916;
+}
+.n, .s, .s2{
+    color: #74c609
 }
