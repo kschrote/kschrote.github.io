@@ -3,14 +3,16 @@ var torso = ["lisatorso.jpg", "misprints.jpg", "moontorso.jpg", "sherlocktorso.j
 var legs = ["crocs.jpg", "lisalegs.jpg", "moonlegs.jpg", "octopus.jpg", "spongebob.jpg"];
 
 $(".mybutton").click(function(){
+        console.log("clicked");
         var randomhead = heads[Math.floor(Math.random()*heads.length)];
-        $(".head").html("<img src='images/" + randomhead + "'>");
-
         var randomtorso = torso[Math.floor(Math.random()*torso.length)];
-        $(".torso").html("<img src='images/" + randomtorso + "'>");
-
         var randomlegs = legs[Math.floor(Math.random()*legs.length)];
-        $(".legs").html("<img src='images/" + randomlegs + "'>");
+        $(".stage").html("");
+        $(".stage").append("<img class='head' src='images/" + randomhead + "'>");
+
+        $(".stage").append("<img class='torso' src='images/" + randomtorso + "'>");
+
+        $(".stage").append("<img class='legs' src='images/" + randomlegs + "'>");
 });         
             
             
